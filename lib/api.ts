@@ -16,6 +16,7 @@ export const fetchUsers = async ():Promise<User[]> => {
 };
 
 export const fetchUserById= async (id:number):Promise<User> => {
+    console.log(id)
     try {
       const response = await fetch(`${BASE_URL}/users/${id}`);
       if (!response.ok) {

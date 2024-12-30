@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+import Card from "@/components/CardBlock";
 import { fetchUsers } from "@/lib/api";
 import { User } from "@/types/user";
 
@@ -23,7 +23,6 @@ export default async function Home() {
 async function getServerSideProps(){
   try{
     const users = await fetchUsers();
-    console.log(users)
     return{props:{users}}
   }
   catch(error) { console.error(error)
