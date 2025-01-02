@@ -19,15 +19,15 @@ const CardBlock: React.FC<Props> = ({ user }) => {
   return (
     
 
-    <Card className="w-[350px]">
+    <Card className="w-[350px] gap-6 mt-10 ml-5">
       <CardHeader className="mt-2">
         <CardTitle>{user.name}</CardTitle>
         <CardDescription>{user.email}</CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="">
         {user.company.name}
       </CardContent>
-      <CardFooter className="flex justify-between">
+      <CardFooter className="flex justify-between hover:text-red-600">
       <Link href={`/users/${user.id}`} legacyBehavior passHref>
         Click me
   </Link>
