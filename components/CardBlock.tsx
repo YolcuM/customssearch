@@ -20,7 +20,7 @@ const CardBlock: React.FC<Props> = ({ user }) => {
     
 
     <Card className="w-[350px]">
-      <CardHeader>
+      <CardHeader className="mt-2">
         <CardTitle>{user.name}</CardTitle>
         <CardDescription>{user.email}</CardDescription>
       </CardHeader>

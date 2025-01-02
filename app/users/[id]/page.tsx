@@ -19,10 +19,10 @@ const UserPage = async ({
   }
 
   return (
-    <div className="">
+    <div className="ml-10 mr-10 mt-3 text-center border-solid border-2 border-orange-400 rounded-md">
       <div className="text-2xl font-bold">{userInfo.name}</div>
       <div>{userInfo.username}</div>
-      <div>{userInfo.email}</div>
+      <div className="font-semibold ">{userInfo.email}</div>
       <div>{userInfo.address.street}</div>
       <div>{userInfo.address.city}</div>
       <div>{userInfo.phone}</div>
